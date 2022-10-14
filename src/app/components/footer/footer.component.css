@@ -1,0 +1,18 @@
+.row{
+    border-top: 1px solid #ff00804d;
+    width: 100%;
+    margin-left: 0;
+    background-image: url(../../../assets/93284.jpg);
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.footer{
+    padding: 50px;
+    color: #fff;
+    background-color: #ff00804d;
+}
+
+h4{
+    padding-bottom: 7px;
+}

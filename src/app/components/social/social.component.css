@@ -1,0 +1,35 @@
+img{
+    width: 35px;
+    margin: 0 10px;
+}
+
+.redes{
+    display: inline;
+}
+
+@media (max-width: 730px){
+    .redes{
+        display: none;
+    }
+} 
+
+button{
+    background-color: rgba(253, 101, 165, 0.479);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+    color: #fff;
+    box-shadow: 1px 1px 1px rgb(138, 138, 138);
+}
+
+button:hover{
+    background-color: rgba(185, 51, 102, 0.6);
+    transition: .3s;
+}
+
+a{
+    text-decoration: none;
+    
+}

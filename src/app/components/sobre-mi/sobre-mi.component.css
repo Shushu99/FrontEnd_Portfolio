@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari&display=swap');
+
+.row{
+    width: 100%;
+    margin-left: 0px;
+    background-image: url(../../../assets/93284.jpg);
+    background-attachment: fixed;
+    padding: 20px;
+    color: #000;
+}
+
+
+
+.sobre-mi{
+    border: 2px solid #ff00804d;
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.795);
+    padding: 40px;
+}
+
+@media (max-width: 991px){
+    .sobre-mi{
+        width: 92%;
+    }
+}
+
+#sobre-texto{
+    padding: 150px;
+    border: 1px solid;
+    float: right;
+    vertical-align: center;
+}
+
+
+
+#foto_perfil{
+    width: 350px;
+    border: 1px solid;
+    float: left;
+    margin: 0 auto;
+}
+
+
+h1{
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+p{
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+

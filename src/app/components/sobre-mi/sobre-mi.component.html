@@ -1,0 +1,20 @@
+<div class="row" *ngIf="Persona">
+  <div class="sobre-mi">
+    <div class="col-xd-12 col-sm-12 col-md-4 col-lg-4">
+      <img src={{Persona.imagen}} class="img-fluid" id="foto_perfil">
+    </div>
+    <div>
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8" id="sobre-texto">
+        <h1>Sobre Mí</h1>
+        <p>
+          {{Persona.descripcion}}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button type="button" class="btn btn-dark" routerLink="/editsobremi/1" *ngIf="isLogged">
+      Editar
+    </button>
+  </div>
+</div>

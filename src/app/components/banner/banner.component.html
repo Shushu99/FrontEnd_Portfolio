@@ -1,0 +1,11 @@
+<div class="row" *ngIf="persona">
+  <div class="col-xs-10 col-sm-10 col-md-9 col-lg-7" id="texto-banner">
+    <h1>{{persona.nombre}} {{persona.apellido}}</h1>
+    <h4>{{persona.titulo}}</h4>
+  </div>
+  <div class="col-lg-2">
+    <button type="button" class="btn btn-dark" routerLink="/editbanner/1" *ngIf="isLogged">
+      Editar
+    </button>
+  </div>
+</div>

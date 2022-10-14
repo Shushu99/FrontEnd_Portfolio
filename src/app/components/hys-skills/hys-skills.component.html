@@ -1,0 +1,33 @@
+<div class="row">
+  <div id="habilidades">
+    <h1>Habilidades</h1>
+    <div>
+      <div class="col-lg-1">
+        <button type="button" class="btn btn-dark" routerLink="/nuevahabi" *ngIf="isLogged">
+          <i class="bi bi-plus-lg"></i>
+        </button>
+      </div>
+      <div *ngFor="let habilidad of habilidad" class="lista">
+        <div class="habilidad">
+          <circle-progress  [percent]="habilidad.porcentaje" [title]="habilidad.nombre"
+            [showTitle]="true" [radius]="65" [showSubtitle]="false" [showUnits]="false" [outerStrokeWidth]="4"
+            [innerStrokeWidth]="2" [outerStrokeColor]="'#FF54AA'" [innerStrokeColor]="'#FFA8D4'" [animation]="true"
+            [animationDuration]="300">
+          </circle-progress>
+          <div class="buttons">
+            <td *ngIf="isLogged">
+              <button class="btn btn-light" routerLink="/edithabi/{{ habilidad.id }}">
+                <i class="bi bi-pencil-square"></i>
+              </button>
+            </td>
+            <td *ngIf="isLogged">
+              <button class="btn btn-danger" (click)="delete(habilidad.id)">
+                <i class="bi bi-x-lg"></i>
+              </button>
+            </td>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

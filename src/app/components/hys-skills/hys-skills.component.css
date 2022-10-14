@@ -1,0 +1,45 @@
+.row{
+    width: 100%;
+    margin-left: 0;
+    background-image: url(../../../assets/93284.jpg);
+    background-attachment: fixed;
+    color: #000;
+    padding: 20px;
+}
+
+#habilidades{
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.795);
+    padding: 40px;
+    text-align: center;
+    border: 2px solid #ff00804d;
+}
+
+@media (max-width: 991px){
+    #habilidades{
+        width: 92%;
+    }
+}
+
+.lista{
+    padding-left: 50px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.habilidad{
+    float: left;
+}
+
+button{
+    border-radius: 100%;
+}
+
+.col-lg-1{
+    margin-left: -13px;
+}

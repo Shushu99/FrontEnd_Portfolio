@@ -1,0 +1,18 @@
+.row{
+    width: 100%;
+    margin-left: 0px;
+    background-image: url(../../../assets/93284.jpg);
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+.card{
+    background-color: #ff00803d;
+    border: 1px solid rgba(240, 128, 128, 0.185);
+    text-shadow: 1px 1px 1px rgb(87, 87, 87);
+    color: rgb(255, 210, 210);
+}
+
+button{
+    box-shadow: 1px 1px 1px rgb(189, 189, 189);
+}

@@ -1,0 +1,13 @@
+#ap-logo{
+    width: 130px;
+}
+
+#inti{
+    width: 250px;
+}
+
+@media (max-width: 500px){
+    #inti{
+        display: none;
+    }
+}
