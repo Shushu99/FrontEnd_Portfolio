@@ -40,9 +40,8 @@ export class EditsobreMiComponent implements OnInit {
   }
 
   subirImagen($event:any){
-    const id = this.activatedRouter.snapshot.params['id'];
-    const name = "perfil_" + id;
+    const name = "perfil_" + 1;
     this.imagenService.subirImagen($event, name)
-  }
+  } 
 
 }

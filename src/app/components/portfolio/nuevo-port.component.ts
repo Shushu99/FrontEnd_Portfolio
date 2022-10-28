@@ -24,10 +24,10 @@ export class NuevoPortComponent implements OnInit {
     this.imagen = this.imagenService.url;
     this.portfolioS.save(portfolio).subscribe(
       data =>{
-        alert("Formación Agregada");
+        alert("Trabajo Agregado");
         this.router.navigate(['']);
       }, err =>{
-      alert("Hubo un error al agregar la formación");
+      alert("Proceso Fallido");
       this.router.navigate(['']);
       }
     ) 

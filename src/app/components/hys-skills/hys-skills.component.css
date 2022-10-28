@@ -37,9 +37,9 @@
 }
 
 button{
+    margin: 2px;
+    border: none;
     border-radius: 100%;
+    background-color: rgba(73, 50, 104, 0.527);
 }
 
-.col-lg-1{
-    margin-left: -13px;
-}

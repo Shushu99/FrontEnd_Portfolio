@@ -16,6 +16,12 @@ form{
     color: rgb(51, 0, 66);
 }
 
+@media (max-width: 991px){
+    form{
+        width: 92%;
+    }
+}
+
 .form-group{
     margin: 20px;
 }

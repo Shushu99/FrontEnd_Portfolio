@@ -8,13 +8,22 @@
     
 }
 
+tr{
+    border: 2px solid #ff00804d;
+}
+
 td{
     color: #000;
-    border: none;
+    font-size: 1.3em;
+    background-color: #ffc1e04d;
+    border-left: 2px solid #ff00804d;
+    text-align: justify;
 }
 
 button{
     border-radius: 100%;
+    background-color: rgba(73, 50, 104, 0.527);
+    border: none;
 }
 
 #educacion{

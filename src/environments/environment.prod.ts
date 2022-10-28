@@ -1,13 +1,13 @@
 export const environment = {
   firebase: {
-    projectId: 'mi-portfolio-387ef',
-    appId: '1:1043888216926:web:63ad099546a342ba9a8dcf',
-    storageBucket: 'mi-portfolio-387ef.appspot.com',
+    projectId: 'giuliana-massanet',
+    appId: '1:791000280497:web:6e07870c19ebcb09a76190',
+    storageBucket: 'giuliana-massanet.appspot.com',
     locationId: 'southamerica-east1',
-    apiKey: 'AIzaSyCeIv4nRdTF2apKP2XOKhVES-CJ8ToTaVo',
-    authDomain: 'mi-portfolio-387ef.firebaseapp.com',
-    messagingSenderId: '1043888216926',
-    measurementId: 'G-6XXF6MNM24',
+    apiKey: 'AIzaSyBKtOB1WebCUDehTq7oy6dApECeVNdK83c',
+    authDomain: 'giuliana-massanet.firebaseapp.com',
+    messagingSenderId: '791000280497',
+    measurementId: 'G-TENB1V7LDS',
   },
   production: true
 };

@@ -26,8 +26,36 @@ h1{
     text-align: center;
 }
 
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    border: none;
+    border-radius: 100%;
+    background-color: rgba(73, 50, 104, 0.527);
+    margin: 2px;
+    margin-bottom: 10px;
+    
+}
+
+.nuevo_tb{
+    margin-top: 10px;
+    text-align: center;
+}
+
 .card{
-    margin-top: 25px;
+    margin: 25px 5px;
     text-align: center;
     border: 2px solid #ff00804d;
+    display: inline-block;
+}
+
+img{
+    margin-top: 7px;
+    border-radius: 5px;
+    border: 2px solid #ff00804d;
+    width: 380px;
+    height: 200px;
 }

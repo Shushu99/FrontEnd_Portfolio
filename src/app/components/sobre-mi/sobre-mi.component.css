@@ -27,17 +27,14 @@
 }
 
 #sobre-texto{
-    padding: 150px;
-    border: 1px solid;
+    padding: 10px;
     float: right;
-    vertical-align: center;
+    
 }
-
-
 
 #foto_perfil{
     width: 350px;
-    border: 1px solid;
+    border: 1px solid #ff00804d;
     float: left;
     margin: 0 auto;
 }
@@ -52,6 +49,16 @@ h1{
 p{
     font-size: 1.3em;
     text-align: justify;
+}
+
+button{
+    border: none;
+    border-radius: 100%;
+    background-color: rgba(73, 50, 104, 0.527);
+}
+
+.edit{
+    float: right;
 }
 
 

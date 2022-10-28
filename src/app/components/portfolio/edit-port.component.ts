@@ -20,7 +20,7 @@ export class EditPortComponent implements OnInit {
       data => {
         this.portfolio = data;
       }, err =>{
-        alert("Error al editar");
+        alert("Proceso Fallido");
         this.router.navigate(['']);
       }
     )
@@ -33,7 +33,7 @@ export class EditPortComponent implements OnInit {
       data => {
         this.router.navigate(['']);
       }, err => {
-        alert("Error al editar");
+        alert("Proceso Fallido");
         this.router.navigate(['']);
       }
     )
@@ -41,7 +41,7 @@ export class EditPortComponent implements OnInit {
 
   subirImagen($event:any){
     const id = this.activatedRouter.snapshot.params['id'];
-    const name = "perfil_" + id;
+    const name = "trabajo_" + id;
     this.imagenService.subirImagen($event, name)
   }
 
