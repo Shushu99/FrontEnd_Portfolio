@@ -12,7 +12,7 @@ import { PortfolioService } from 'src/app/service/portfolio.service';
 export class EditPortComponent implements OnInit {
   portfolio: Portfolio = null;
 
-  constructor(private portfolioS: PortfolioService, private activatedRouter: ActivatedRoute, private router: Router, public imagenService: ImagenService) { }
+  constructor(private portfolioS: PortfolioService, private activatedRouter: ActivatedRoute, private router: Router, public imagenServiceP: ImagenService) { }
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
@@ -24,11 +24,13 @@ export class EditPortComponent implements OnInit {
         this.router.navigate(['']);
       }
     )
+
+    this.imagenServiceP.clearUrl();
   }
 
   onUpdate(): void{
     const id = this.activatedRouter.snapshot.params['id'];
-    this.portfolio.imagen = this.imagenService.url;
+    this.portfolio.imagen = this.imagenServiceP.url;
     this.portfolioS.update(id, this.portfolio).subscribe(
       data => {
         this.router.navigate(['']);
@@ -40,9 +42,10 @@ export class EditPortComponent implements OnInit {
   }
 
   subirImagen($event:any){
-    const id = this.activatedRouter.snapshot.params['id'];
-    const name = "trabajo_" + id;
-    this.imagenService.subirImagen($event, name)
+    //const id = this.activatedRouter.snapshot.params['id'];
+    const name = "trabajo_" + this.portfolio.nombre;
+    this.imagenServiceP.subirImagen($event, name)
   }
 
 }
+ 

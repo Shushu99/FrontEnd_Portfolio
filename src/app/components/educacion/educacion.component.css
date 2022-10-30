@@ -41,6 +41,13 @@ button{
     }
 }
 
+@media (max-width: 585px){
+    table{
+        overflow-x: scroll;
+    }
+    
+}
+
 h1{
     text-align: center;
     padding-bottom: 20px;

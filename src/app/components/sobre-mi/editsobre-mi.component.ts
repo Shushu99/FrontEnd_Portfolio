@@ -12,7 +12,7 @@ import { PersonaService } from 'src/app/service/persona.service';
 export class EditsobreMiComponent implements OnInit {
   Persona: persona = null;
 
-  constructor(private personaS: PersonaService, private activatedRouter: ActivatedRoute, private router: Router, public imagenService: ImagenService) { }
+  constructor(private personaS: PersonaService, private activatedRouter: ActivatedRoute, private router: Router, public imagenServicePer: ImagenService) { }
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
@@ -24,11 +24,13 @@ export class EditsobreMiComponent implements OnInit {
         this.router.navigate(['']);
       }
     )
+
+    this.imagenServicePer.clearUrl();
   }
 
   onUpdate(): void{
     const id = this.activatedRouter.snapshot.params['id'];
-    this.Persona.imagen = this.imagenService.url
+    this.Persona.imagen = this.imagenServicePer.url
     this.personaS.update(id, this.Persona).subscribe(
       data => {
         this.router.navigate(['']);
@@ -40,8 +42,8 @@ export class EditsobreMiComponent implements OnInit {
   }
 
   subirImagen($event:any){
-    const name = "perfil_" + 1;
-    this.imagenService.subirImagen($event, name)
+    const name = "perfil_" + this.Persona.nombre;
+    this.imagenServicePer.subirImagen($event, name)
   } 
-
+ 
 }

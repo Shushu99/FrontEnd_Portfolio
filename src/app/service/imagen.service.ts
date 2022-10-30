@@ -27,4 +27,9 @@ export class ImagenService {
     })
     .catch(error => console.log(error))
   }
+
+  clearUrl(){
+    this.url = "";
+  }
 }
+ 

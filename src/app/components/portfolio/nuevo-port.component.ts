@@ -14,14 +14,15 @@ export class NuevoPortComponent implements OnInit {
   descripcion: string;
   imagen: string;
 
-  constructor(private portfolioS: PortfolioService,private activatedRouter: ActivatedRoute, private router: Router, public imagenService: ImagenService) { }
+  constructor(private portfolioS: PortfolioService,private activatedRouter: ActivatedRoute, private router: Router, public imagenServiceP: ImagenService) { }
 
   ngOnInit(): void {
+    this.imagenServiceP.clearUrl();
   }
 
   onCreate(): void{
     const portfolio = new Portfolio(this.nombre, this.descripcion, this.imagen);
-    this.imagen = this.imagenService.url;
+    this.imagen = this.imagenServiceP.url;
     this.portfolioS.save(portfolio).subscribe(
       data =>{
         alert("Trabajo Agregado");
@@ -34,9 +35,10 @@ export class NuevoPortComponent implements OnInit {
   }
 
   subirImagen($event:any){
-    const id = this.activatedRouter.snapshot.params['id'];
-    const name = "proyecto_" + id;
-    this.imagenService.subirImagen($event, name)
+    //const id = this.activatedRouter.snapshot.params['id'];
+    const name = "trabajo_" + this.nombre;
+    this.imagenServiceP.subirImagen($event, name)
   }
 
 }
+ 
