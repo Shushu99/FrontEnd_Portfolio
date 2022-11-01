@@ -42,7 +42,7 @@ button{
 }
 
 @media (max-width: 585px){
-    table{
+    .tabla{
         overflow-x: scroll;
     }
     

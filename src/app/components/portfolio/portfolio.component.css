@@ -50,6 +50,7 @@ button{
     text-align: center;
     border: 2px solid #ff00804d;
     display: inline-block;
+    max-width: 380px;
 }
 
 img{
