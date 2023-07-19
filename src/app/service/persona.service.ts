@@ -8,7 +8,7 @@ import { persona } from '../model/persona.model';
 })
 
 export class PersonaService {
-  URL = 'https://backgiuliana.herokuapp.com/personas/';
+  URL = 'https://giulianabackend.onrender.com/personas/';
 
   constructor(private httpClient: HttpClient) { }
 

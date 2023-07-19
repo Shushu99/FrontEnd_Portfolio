@@ -9,7 +9,7 @@ import { NuevoUser } from '../model/nuevo-user';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'https://backgiuliana.herokuapp.com/auth/';
+  authURL = 'https://giulianabackend.onrender.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

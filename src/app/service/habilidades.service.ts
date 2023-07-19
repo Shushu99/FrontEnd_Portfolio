@@ -7,7 +7,7 @@ import { Habilidades } from '../model/habilidades';
   providedIn: 'root'
 })
 export class HabilidadesService {
-  URL = "https://backgiuliana.herokuapp.com/hys/";
+  URL = "https://giulianabackend.onrender.com/hys/";
 
   constructor(private httpClient: HttpClient) { } 
 

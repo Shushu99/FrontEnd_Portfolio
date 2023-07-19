@@ -7,7 +7,7 @@ import { Portfolio } from '../model/portfolio';
   providedIn: 'root'
 })
 export class PortfolioService {
-  URL = "https://backgiuliana.herokuapp.com/portfolio/";
+  URL = "https://giulianabackend.onrender.com/portfolio/";
 
   constructor(private httpClient: HttpClient) { } 
 
